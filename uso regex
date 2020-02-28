@@ -1,0 +1,13 @@
+#se importa un modulo para usar regular expressions 
+import re
+
+#se utliza un ciclo y a la hora de preguntar si esta incorrecto se le seguira preguntando al usuario lo mismo.
+#se utiliza un break para qur asi el ciclo tenga un fina a la hora de ser correcto.
+while True:
+  RFC = input("escriba su RFC: ")
+  coincide = re.search("^[A-Z]{4}-[0-9]{6}-[A-Z0-9]{3}$",RFC)
+  if (coincide):
+    print("RFC Correcto!")
+    break
+  else:
+    print("RFC incorrecto. Intenta de nuevo.")
