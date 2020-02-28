@@ -1,0 +1,36 @@
+#se importa datos de datetime.
+
+import datetime
+#se hace un formulario para la escuela.
+print('formulario de la escuela')
+print('escriba los siguientes datos')
+
+#a continuacion se preguntaran datos desde string, int, float y date.
+nombre1= input('dime tu nombre')
+
+edad= input('dime tu edad')
+edad1=int(edad)
+
+estatura= input('dime tu estatura')
+estatura1= float(estatura)
+
+fechaNac=input('dime tu fecha de nacimiento')
+
+year=fechaNac[0:4]
+mes=fechaNac[5:7]
+dia=fechaNac[-2:]
+print(year)
+print(mes)
+print(dia)
+
+fecha= datetime.datetime(int(year), int(mes), int(dia))
+
+print(nombre1)
+print(type(nombre1))
+print(edad)
+print(type(edad))
+print(estatura)
+print(type(estatura))
+print(fechaNac)
+print(type(fechaNac))
+ 
