@@ -1,0 +1,4 @@
+#se escribe algun texto dentro de la variable y asi al usuario se lo muestre.
+
+variable= ('juan se comio su lonche')
+print(variable)
