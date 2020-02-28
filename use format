@@ -1,0 +1,8 @@
+#se estara utilizando el format para que el string se le pueda insertar valores.
+base1= 9
+altura2= 5
+triangulo=(base1*altura2/2)
+area="Area: {2:0.2f} ( {0} por {1} entre dos )"
+print(area.format(base1, altura2, triangulo))
+
+#le aparecera al usuario cual es su haria y como es que se hizo el procedimiento.
